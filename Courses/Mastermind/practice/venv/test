@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FM_autoOBS_telegram xsi:noNamespaceSchemaLocation="FM_autoOBS_telegram.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mcxml:readNode name="Versionsnummer_telegram"iopoint="\Async\Version_Telegram"/>
+	<mcxml:readNode name="Versionsnummer_autoOBS"iopoint="\Async\Version_AutoOBS"/>
+	<mcxml:readNode name="IDServer"iopoint="\Async\IDServer"/>
+	<airport>
+		<mcxml:readNode name="loc_indicator"iopoint="\Async\Loc_Indicator"/>
+		<mcxml:readNode name="dateValidity"iopoint="\Async\OBS_dateValidity"/>
+		<mcxml:readNode name="timeUTCValidity"iopoint="\Async\OBS_timeUTCValidity"/>
+		<mcxml:readNode name="dateIssue"iopoint="\Async\OBS_dateIssue"/>
+		<mcxml:readNode name="timeUTCIssue"iopoint="\Async\OBS_timeUTCIssue"/>
+		<weatherClouds_METAR_Syntax>
+			<visibility_METAR>
+				<mcxml:readNode name="prevailingVisibility"iopoint="\Async\VIS_METAR_prevailing" func="VIS"/>
+				<mcxml:readNode name="minimumVisibility"iopoint="\Async\VIS_METAR_minimum" func="VIS"/>
+			</visibility_METAR>
+			<presentWeather_METAR>
+				<presentWeather_1>
+					<mcxml:readNode name="intensity"iopoint="\Async\PW_METAR1_intensity"/>
+					<mcxml:readNode name="descriptor"iopoint="\Async\PW_METAR1_descriptor"/>
+					<mcxml:readNode name="weatherFragment_1"iopoint="\Async\PW_METAR1_WF_1"/>
+					<mcxml:readNode name="weatherFragment_2"iopoint="\Async\PW_METAR1_WF_2"/>
+					<mcxml:readNode name="weatherFragment_3"iopoint="\Async\PW_METAR1_WF_3"/>
+				</presentWeather_1>
+				<presentWeather_2>
+					<mcxml:readNode name="intensity"iopoint="\Async\PW_METAR2_intensity"/>
+					<mcxml:readNode name="descriptor"iopoint="\Async\PW_METAR2_descriptor"/>
+					<mcxml:readNode name="weatherFragment_1"iopoint="\Async\PW_METAR2_WF_1"/>
+					<mcxml:readNode name="weatherFragment_2"iopoint="\Async\PW_METAR2_WF_2"/>
+					<mcxml:readNode name="weatherFragment_3"iopoint="\Async\PW_METAR2_WF_3"/>
+				</presentWeather_2>
+				<presentWeather_3>
+					<mcxml:readNode name="intensity"iopoint="\Async\PW_METAR3_intensity"/>
+					<mcxml:readNode name="descriptor"iopoint="\Async\PW_METAR3_descriptor"/>
+					<mcxml:readNode name="weatherFragment_1"iopoint="\Async\PW_METAR3_WF_1"/>
+					<mcxml:readNode name="weatherFragment_2"iopoint="\Async\PW_METAR3_WF_2"/>
+					<mcxml:readNode name="weatherFragment_3"iopoint="\Async\PW_METAR3_WF_3"/>
+				</presentWeather_3>
+			</presentWeather_METAR>
+			<cloudAirport_METAR>
+				<cloudAirport_1>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_METAR1_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_METAR1_height" func="METAR_CLOUD_HEIGHT"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_METAR1_type"/>
+				</cloudAirport_1>
+				<cloudAirport_2>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_METAR2_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_METAR2_height" func="METAR_CLOUD_HEIGHT"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_METAR2_type"/>
+				</cloudAirport_2>
+				<cloudAirport_3>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_METAR3_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_METAR3_height" func="METAR_CLOUD_HEIGHT"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_METAR3_type"/>
+				</cloudAirport_3>
+				<cloudAirport_4>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_METAR4_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_METAR4_height" func="METAR_CLOUD_HEIGHT"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_METAR4_type"/>
+				</cloudAirport_4>
+				<cloudAirport_5>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_METAR5_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_METAR5_height" func="METAR_CLOUD_HEIGHT"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_METAR5_type"/>
+				</cloudAirport_5>
+			</cloudAirport_METAR>
+		</weatherClouds_METAR_Syntax>
+		<weatherClouds_METREPORT_Syntax>
+			<visibility_METREPORT>
+				<mcxml:readNode name="prevailingVisibility"iopoint="\Async\VIS_MR_prevailing" func="VIS"/>
+			</visibility_METREPORT>
+			<presentWeather_METREPORT>
+				<presentWeather_1>
+					<mcxml:readNode name="intensity"iopoint="\Async\PW_MR1_intensity"/>
+					<mcxml:readNode name="descriptor"iopoint="\Async\PW_MR1_descriptor"/>
+					<mcxml:readNode name="weatherFragment_1"iopoint="\Async\PW_MR1_WF_1"/>
+					<mcxml:readNode name="weatherFragment_2"iopoint="\Async\PW_MR1_WF_2"/>
+					<mcxml:readNode name="weatherFragment_3"iopoint="\Async\PW_MR1_WF_3"/>
+				</presentWeather_1>
+				<presentWeather_2>
+					<mcxml:readNode name="intensity"iopoint="\Async\PW_MR2_intensity"/>
+					<mcxml:readNode name="descriptor"iopoint="\Async\PW_MR2_descriptor"/>
+					<mcxml:readNode name="weatherFragment_1"iopoint="\Async\PW_MR2_WF_1"/>
+					<mcxml:readNode name="weatherFragment_2"iopoint="\Async\PW_MR2_WF_2"/>
+					<mcxml:readNode name="weatherFragment_3"iopoint="\Async\PW_MR2_WF_3"/>
+				</presentWeather_2>
+				<presentWeather_3>
+					<mcxml:readNode name="intensity"iopoint="\Async\PW_MR3_intensity"/>
+					<mcxml:readNode name="descriptor"iopoint="\Async\PW_MR3_descriptor"/>
+					<mcxml:readNode name="weatherFragment_1"iopoint="\Async\PW_MR3_WF_1"/>
+					<mcxml:readNode name="weatherFragment_2"iopoint="\Async\PW_MR3_WF_2"/>
+					<mcxml:readNode name="weatherFragment_3"iopoint="\Async\PW_MR3_WF_3"/>
+				</presentWeather_3>
+			</presentWeather_METREPORT>
+			<cloudAirport_METREPORT>
+				<cloudAirport_1>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_MR1_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_MR1_height"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_MR1_type"/>
+				</cloudAirport_1>
+				<cloudAirport_2>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_MR2_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_MR2_height"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_MR2_type"/>
+				</cloudAirport_2>
+				<cloudAirport_3>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_MR3_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_MR3_height"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_MR3_type"/>
+				</cloudAirport_3>
+				<cloudAirport_4>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_MR4_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_MR4_height"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_MR4_type"/>
+				</cloudAirport_4>
+				<cloudAirport_5>
+					<mcxml:readNode name="amount"iopoint="\Async\CA_MR5_amount"/>
+					<mcxml:readNode name="height"iopoint="\Async\CA_MR5_height"/>
+					<mcxml:readNode name="type"iopoint="\Async\CA_MR5_type"/>
+				</cloudAirport_5>
+			</cloudAirport_METREPORT>
+		</weatherClouds_METREPORT_Syntax>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS2" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS3" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS4" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS5" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS6" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS7" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS8" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS9" noreset="true"/>
+		<mcxml:readNode name="Comment_autoOBS"iopoint="\Async\comment_autoOBS10" noreset = "true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving2" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving3" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving4" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving5" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving6" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving7" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving8" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving9" noreset="true"/>
+		<mcxml:readNode name="OFArchiving"iopoint="\Async\OFArchiving10" noreset="true"/>
+		<recentWeather>
+			<mcxml:readNode name="recentWeather_1"iopoint="\Async\recentWeather_1"/>
+			<mcxml:readNode name="recentWeather_2"iopoint="\Async\recentWeather_2"/>
+			<mcxml:readNode name="recentWeather_3"iopoint="\Async\recentWeather_3"/>
+		</recentWeather>
+		<runway>
+			<mcxml:readNode name="name"iopoint="\Async\runway_AB"/>
+				<visibilityLocation mcxml:dynamicMap="true">
+					<mcxml:dynamicID name="ID" />
+					<mcxml:readNode name="localVisibility"iopoint="\Async\runwayAB_locVIS_%L"  mcxml:dynamicName="%L" func="VIS"/>
+				</visibilityLocation>
+				<visibilityLocation mcxml:dynamicMap="true">
+					<mcxml:dynamicID name="ID" />
+					<mcxml:readNode name="localVisibility"iopoint="\Async\runwayAB_locVIS_%L"  mcxml:dynamicName="%L" func="VIS"/>
+				</visibilityLocation>
+				<visibilityLocation mcxml:dynamicMap="true">
+					<mcxml:dynamicID name="ID" />
+					<mcxml:readNode name="localVisibility"iopoint="\Async\runwayAB_locVIS_%L"  mcxml:dynamicName="%L" func="VIS"/>
+				</visibilityLocation>
+			<threshold>
+				<mcxml:readNode name="name"iopoint="\Async\runway_A"/>
+				<cloudThreshold>
+					<cloudThreshold_1>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayA_CT1_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayA_CT1_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayA_CT1_type"/>
+					</cloudThreshold_1>
+					<cloudThreshold_2>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayA_CT2_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayA_CT2_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayA_CT2_type"/>
+					</cloudThreshold_2>
+					<cloudThreshold_3>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayA_CT3_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayA_CT3_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayA_CT3_type"/>
+					</cloudThreshold_3>
+					<cloudThreshold_4>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayA_CT4_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayA_CT4_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayA_CT4_type"/>
+					</cloudThreshold_4>
+					<cloudThreshold_5>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayA_CT5_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayA_CT5_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayA_CT5_type"/>
+					</cloudThreshold_5>
+				</cloudThreshold>
+			</threshold>
+			<threshold>
+				<mcxml:readNode name="name"iopoint="\Async\runway_B"/>
+				<cloudThreshold>
+					<cloudThreshold_1>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayB_CT1_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayB_CT1_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayB_CT1_type"/>
+					</cloudThreshold_1>
+					<cloudThreshold_2>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayB_CT2_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayB_CT2_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayB_CT2_type"/>
+					</cloudThreshold_2>
+					<cloudThreshold_3>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayB_CT3_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayB_CT3_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayB_CT3_type"/>
+					</cloudThreshold_3>
+					<cloudThreshold_4>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayB_CT4_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayB_CT4_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayB_CT4_type"/>
+					</cloudThreshold_4>
+					<cloudThreshold_5>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayB_CT5_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayB_CT5_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayB_CT5_type"/>
+					</cloudThreshold_5>
+				</cloudThreshold>
+			</threshold>
+		</runway>
+		<runway>
+			<mcxml:readNode name="name"iopoint="\Async\runway_CD"/>
+				<visibilityLocation mcxml:dynamicMap="true">
+					<mcxml:dynamicID name="ID" />
+					<mcxml:readNode name="localVisibility"iopoint="\Async\runwayCD_locVIS_%L"  mcxml:dynamicName="%L" func="VIS"/>
+				</visibilityLocation>
+				<visibilityLocation mcxml:dynamicMap="true">
+					<mcxml:dynamicID name="ID" />
+					<mcxml:readNode name="localVisibility"iopoint="\Async\runwayCD_locVIS_%L"  mcxml:dynamicName="%L" func="VIS"/>
+				</visibilityLocation>
+				<visibilityLocation mcxml:dynamicMap="true">
+					<mcxml:dynamicID name="ID" />
+					<mcxml:readNode name="localVisibility"iopoint="\Async\runwayCD_locVIS_%L"  mcxml:dynamicName="%L" func="VIS"/>
+				</visibilityLocation>
+			<threshold>
+				<mcxml:readNode name="name"iopoint="\Async\runway_C"/>
+				<cloudThreshold>
+					<cloudThreshold_1>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayC_CT1_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayC_CT1_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayC_CT1_type"/>
+					</cloudThreshold_1>
+					<cloudThreshold_2>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayC_CT2_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayC_CT2_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayC_CT2_type"/>
+					</cloudThreshold_2>
+					<cloudThreshold_3>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayC_CT3_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayC_CT3_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayC_CT3_type"/>
+					</cloudThreshold_3>
+					<cloudThreshold_4>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayC_CT4_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayC_CT4_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayC_CT4_type"/>
+					</cloudThreshold_4>
+					<cloudThreshold_5>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayC_CT5_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayC_CT5_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayC_CT5_type"/>
+					</cloudThreshold_5>
+				</cloudThreshold>
+			</threshold>
+			<threshold>
+				<mcxml:readNode name="name"iopoint="\Async\runway_D"/>
+				<cloudThreshold>
+					<cloudThreshold_1>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayD_CT1_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayD_CT1_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayD_CT1_type"/>
+					</cloudThreshold_1>
+					<cloudThreshold_2>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayD_CT2_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayD_CT2_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayD_CT2_type"/>
+					</cloudThreshold_2>
+					<cloudThreshold_3>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayD_CT3_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayD_CT3_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayD_CT3_type"/>
+					</cloudThreshold_3>
+					<cloudThreshold_4>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayD_CT4_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayD_CT4_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayD_CT4_type"/>
+					</cloudThreshold_4>
+					<cloudThreshold_5>
+						<mcxml:readNode name="amount"iopoint="\Async\runwayD_CT5_amount"/>
+						<mcxml:readNode name="height"iopoint="\Async\runwayD_CT5_height"/>
+						<mcxml:readNode name="type"iopoint="\Async\runwayD_CT5_type"/>
+					</cloudThreshold_5>
+				</cloudThreshold>
+			</threshold>
+		</runway>
+	</airport>
+</FM_autoOBS_telegram>
